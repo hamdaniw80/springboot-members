@@ -16,13 +16,7 @@ pipeline {
       }
       stage('Build Docker Images') {
          steps {
-            script {
-                try {
-                    sh 'docker rmi -f springbootmembers:1.0.0'
-                } catch (Exception e) {
-                    sh 'docker build -t springbootmembers:1.0.0 .'
-                }
-            }
+            sh 'docker build -t springbootmembers:1.0.0 .'
          }
       }
       stage('Run Docker Images') {
