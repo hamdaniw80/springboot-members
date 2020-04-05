@@ -23,7 +23,7 @@ public class MemberController {
 	@GetMapping("/hello")
 	public String hello()
 	{
-		return "Hello World!!";
+		return "Hello Wildan Tamvan!!!";
 	}
 	  
 	  @GetMapping("/members")
