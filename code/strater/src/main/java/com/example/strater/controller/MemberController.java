@@ -20,6 +20,12 @@ public class MemberController {
 	@Autowired
 	  private MemberService memberService;
 
+	@GetMapping("/hello")
+	public String hello()
+	{
+		return "Hello World!!";
+	}
+	  
 	  @GetMapping("/members")
 	  public List<Member> all() {
 	     return memberService.getAllMembers();
